@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1A1C20;
+        }
+
+        .pagina {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0.7vh;
+            gap: 0.7vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            flex-basis: 50vh;
+            height: 50vh;
+            background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12vh;
+            background: rgb(146, 0, 0);
+            height: 20vh;
+            width: 20vh;
+            transition: transform 0.5s ease;
+        }
+
+        .tipo1 {
+            animation: tipo1 3s infinite;
+        }
+
+        @keyframes tipo1 {
+            to {
+                transform: rotate(45deg);
+            }
+        }
+
+        .tipo2 {
+            animation: tipo2 3s infinite;
+        }
+
+        @keyframes tipo2 {
+            to {
+                transform: scale(1.5);
+            }
+        }
+
+        .tipo3 {
+            animation: tipo3 3s infinite;
+        }
+
+        @keyframes tipo3 {
+            to {
+                transform: translateX(50px);
+            }
+        }
+
+        .tipo4 {
+            animation: tipo4 3s infinite;
+        }
+
+        @keyframes tipo4 {
+            to {
+                transform: skewX(30deg);
+            }
+        }
+
+        .tipo5 {
+            animation: tipo5 3s infinite;
+        }
+
+        @keyframes tipo5 {
+            to {
+                transform: skewY(20deg);
+            }
+        }
+
+        .tipo6 {
+            animation: tipo6 3s infinite;
+        }
+
+        @keyframes tipo6 {
+            to {
+                transform: rotateX(180deg);
+            }
+        }
+
+        .tipo7 {
+            animation: tipo7 3s infinite;
+        }
+
+        @keyframes tipo7 {
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .tipo8 {
+            animation: tipo8 3s infinite;
+        }
+
+        @keyframes tipo8 {
+            to {
+                transform: rotateZ(45deg);
+            }
+        }
+
+        .tipo9 {
+            animation: tipo9 3s infinite;
+        }
+
+        @keyframes tipo9 {
+            to {
+                transform: scaleX(2);
+            }
+        }
+
+        .tipo10 {
+            animation: tipo10 3s infinite;
+        }
+
+        @keyframes tipo10 {
+            to {
+                transform: scaleY(0.5);
+            }
+        }
+
+        .tipo11 {
+            animation: tipo11 3s infinite;
+        }
+
+        @keyframes tipo11 {
+            to {
+                transform: translate(-20px, 50px);
+            }
+        }
+
+        .tipo12 {
+            animation: tipo12 3s infinite;
+        }
+
+        @keyframes tipo12 {
+            to {
+                transform: skew(45deg, -15deg);
+            }
+        }
+
+        .tipo13 {
+            animation: tipo13 3s infinite;
+        }
+
+        @keyframes tipo13 {
+            to {
+                transform: rotate(45deg) scale(1.5);
+            }
+        }
+
+        .tipo14 {
+            animation: tipo14 3s infinite;
+        }
+
+        @keyframes tipo14 {
+            to {
+                transform: rotate3d(1, 1, 1, 45deg);
+            }
+        }
+
+        .tipo15 {
+            animation: tipo15 3s infinite;
+        }
+
+        @keyframes tipo15 {
+            to {
+                transform: scale3d(1.5, 1.5, 1.5);
+            }
+        }
+
+        .tipo16 {
+            animation: tipo16 3s infinite;
+        }
+
+        @keyframes tipo16 {
+            to {
+                transform: translate3d(50px, 0, 0);
+            }
+        }
+
+        .tipo17 {
+            animation: tipo17 3s infinite;
+        }
+
+        @keyframes tipo17 {
+            to {
+                transform: perspective(1000px) rotateX(45deg);
+            }
+        }
+
+        .tipo18 {
+            animation: tipo18 3s infinite;
+        }
+
+        @keyframes tipo18 {
+            to {
+                transform: perspective(1000px) scaleY(1.5);
+            }
+        }
+
+        .tipo19 {
+            animation: tipo19 3s infinite;
+        }
+
+        @keyframes tipo19 {
+            to {
+                transform: perspective(1000px) translateY(50px);
+            }
+        }
+
+        .tipo20 {
+            animation: tipo20 3s infinite;
+        }
+
+        @keyframes tipo20 {
+            to {
+                transform: perspective(1000px) rotate(45deg) scale(1.5);
+            }
+        }
+
+        .tipo21 {
+            animation: tipo21 3s infinite;
+        }
+
+        @keyframes tipo21 {
+            to {
+                transform-origin: center;
+                transform: rotate(45deg);
+            }
+        }
+
+        .tipo22 {
+            animation: tipo22 3s infinite;
+        }
+
+        @keyframes tipo22 {
+            to {
+                transform-origin: top left;
+                transform: scale(2);
+            }
+        }
+
+        .tipo23 {
+            animation: tipo23 3s infinite;
+        }
+
+        @keyframes tipo23 {
+            to {
+                transform-origin: center;
+                transform: translate(50px, 30px);
+            }
+        }
+
+        .tipo24 {
+            animation: tipo24 3s infinite;
+        }
+
+        @keyframes tipo24 {
+            to {
+                transform-origin: bottom right;
+                transform: skew(30deg, 20deg);
+            }
+        }
+
+        .tipo25 {
+            animation: tipo25 3s infinite;
+        }
+
+        @keyframes tipo25 {
+            to {
+                transform-origin: bottom left;
+                transform: rotateX(180deg);
+            }
+        }
+
+        .tipo26 {
+            animation: tipo26 3s infinite;
+        }
+
+        @keyframes tipo26 {
+            to {
+                transform-origin: top right;
+                transform: rotateY(180deg);
+            }
+        }
+
+        .tipo27 {
+            animation: tipo27 3s infinite;
+        }
+
+        @keyframes tipo27 {
+            to {
+                transform-origin: 50% 50%;
+                transform: rotateZ(45deg);
+            }
+        }
+
+        .tipo28 {
+            animation: tipo28 3s infinite;
+        }
+
+        @keyframes tipo28 {
+            to {
+                transform-origin: 25% 75%;
+                transform: scaleX(1.5);
+            }
+        }
+
+        .tipo29 {
+            animation: tipo29 3s infinite;
+        }
+
+        @keyframes tipo29 {
+            to {
+                transform-origin: 80% 20%;
+                transform: translate(50px, 30px);
+            }
+        }
+
+        .tipo30 {
+            animation: tipo30 3s infinite;
+        }
+
+        @keyframes tipo30 {
+            to {
+                transform-origin: 30% 70%;
+                transform: skew(30deg, 20deg);
+            }
+        }
+
+        .tipo31 {
+            animation: tipo31 3s infinite;
+        }
+
+        @keyframes tipo31 {
+            to {
+                transform-origin: center;
+                transform: perspective(1000px) rotateZ(45deg);
+            }
+        }
+
+        .tipo32 {
+            animation: tipo32 3s infinite;
+        }
+
+        @keyframes tipo32 {
+            to {
+                transform-origin: top right;
+                transform: perspective(1000px) scaleY(2);
+            }
+        }
+
+        .tipo33 {
+            animation: tipo33 3s infinite;
+        }
+
+        @keyframes tipo33 {
+            to {
+                transform-origin: center;
+                transform: perspective(1000px) translate(50px, 30px);
+            }
+        }
+
+        .tipo34 {
+            animation: tipo34 3s infinite;
+        }
+
+        @keyframes tipo34 {
+            to {
+                transform-origin: bottom right;
+                transform: perspective(1000px) skew(30deg, 20deg);
+            }
+        }
+
+        .tipo35 {
+            animation: tipo35 3s infinite;
+        }
+
+        @keyframes tipo35 {
+            to {
+                transform-origin: bottom left;
+                transform: perspective(1000px) rotateX(180deg);
+            }
+        }
+
+        .tipo36 {
+            animation: tipo36 3s infinite;
+        }
+
+        @keyframes tipo36 {
+            to {
+                transform-origin: top right;
+                transform: perspective(1000px) rotateY(180deg);
+            }
+        }
+
+        .tipo37 {
+            animation: tipo37 3s infinite;
+        }
+
+        @keyframes tipo37 {
+            to {
+                transform-origin: 50% 50%;
+                transform: perspective(1000px) rotateZ(45deg);
+            }
+        }
+
+        .tipo38 {
+            animation: tipo38 3s infinite;
+        }
+
+        @keyframes tipo38 {
+            to {
+                transform-origin: 25% 75%;
+                transform: perspective(1000px) scaleX(1.5);
+            }
+        }
+
+        .tipo39 {
+            animation: tipo39 3s infinite;
+        }
+
+        @keyframes tipo39 {
+            to {
+                transform-origin: 80% 20%;
+                transform: perspective(1000px) translate(50px, 30px);
+            }
+        }
+
+        .tipo40 {
+            animation: tipo40 3s infinite;
+        }
+
+        @keyframes tipo40 {
+            to {
+                transform-origin: 30% 70%;
+                transform: perspective(1000px) skew(30deg, 20deg);
+            }
+        }
+
+        .tipo41 {
+            animation: tipo41 3s infinite;
+        }
+
+        @keyframes tipo41 {
+            to {
+                transform: rotateX(90deg) rotateY(90deg) scaleZ(2);
+            }
+        }
+
+        .tipo42 {
+            animation: tipo42 3s infinite;
+        }
+
+        @keyframes tipo42 {
+            to {
+                transform: rotateX(45deg) rotateY(45deg) scaleZ(1.5);
+            }
+        }
+
+        .tipo43 {
+            animation: tipo43 3s infinite;
+        }
+
+        @keyframes tipo43 {
+            to {
+                transform: perspective(1000px) rotateY(180deg);
+
+            }
+        }
+
+        .tipo44 {
+            animation: tipo44 3s infinite linear;
+        }
+
+        @keyframes tipo44 {
+            from {
+                transform: perspective(1000px) rotateY(0deg);
+            }
+
+            to {
+                transform: perspective(1000px) rotateY(360deg);
+            }
+        }
+
+        .tipo45 {
+            animation: tipo45 1s infinite alternate;
+        }
+
+        @keyframes tipo45 {
+            from {
+                transform: rotateZ(0deg);
+            }
+
+            to {
+                transform: rotateZ(45deg);
+            }
+        }
+
+        .tipo46 {
+            animation: tipo46 0.5s infinite alternate;
+        }
+
+        @keyframes tipo46 {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-20px);
+            }
+        }
+
+        .tipo47 {
+            animation: tipo47 3s infinite;
+        }
+
+        @keyframes tipo47 {
+            to {
+                transform: perspective(1000px) rotateY(45deg) rotateZ(45deg);
+            }
+        }
+
+        .tipo48 {
+            animation: tipo48 1s infinite alternate;
+        }
+
+        @keyframes tipo48 {
+            from {
+                transform: scaleY(1);
+            }
+
+            to {
+                transform: scaleY(-1);
+            }
+        }
+
+        .tipo49 {
+            animation: tipo49 1s infinite alternate;
+        }
+
+        @keyframes tipo49 {
+            from {
+                transform: scaleX(1);
+            }
+
+            to {
+                transform: scaleX(1.5);
+            }
+        }
+
+        .tipo50 {
+            animation: tipo50 3s infinite;
+        }
+
+        @keyframes tipo50 {
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        /* Rotar en los ejes X y Y */
+        .tipo51 {
+            animation: tipo51 3s infinite;
+        }
+
+        @keyframes tipo51 {
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        /* Inclinar hacia la derecha */
+        .tipo52 {
+            animation: tipo52 3s infinite;
+        }
+
+        @keyframes tipo52 {
+            to {
+                transform: skewX(30deg);
+            }
+        }
+
+        /* Inclinar hacia arriba */
+        .tipo53 {
+            animation: tipo53 3s infinite;
+        }
+
+        @keyframes tipo53 {
+            to {
+                transform: skewY(30deg);
+            }
+        }
+
+        /* tipo54 */
+        .tipo54 {
+            animation: tipo54 3s infinite;
+        }
+
+        @keyframes tipo54 {
+            to {
+                transform: scaleX(1.5) scaleY(0.5);
+            }
+        }
+
+        /* Rotar en el eje X y luego en el eje Y */
+        .tipo55 {
+            animation: tipo55 3s infinite;
+        }
+
+        @keyframes tipo55 {
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        /* Rotar en el eje X y luego en el eje Z */
+        .tipo56 {
+            animation: tipo56 3s infinite;
+        }
+
+        @keyframes tipo56 {
+            to {
+                transform: rotateX(360deg) rotateZ(360deg);
+            }
+        }
+
+        /* Inclinar hacia la izquierda y hacia arriba */
+        .tipo57 {
+            animation: tipo57 3s infinite;
+        }
+
+        @keyframes tipo57 {
+            to {
+                transform: skewX(-30deg) skewY(30deg);
+            }
+        }
+
+        /* tipo54 en el eje X y en el eje Z */
+        .tipo58 {
+            animation: tipo58 3s infinite;
+        }
+
+        @keyframes tipo58 {
+            to {
+                transform: scaleX(1.5) scaleZ(0.5);
+            }
+        }
+
+        /* Rotar en el eje Y y luego en el eje Z */
+        .tipo59 {
+            animation: tipo59 3s infinite;
+        }
+
+        @keyframes tipo59 {
+            to {
+                transform: rotateY(360deg) rotateZ(360deg);
+            }
+        }
+
+        .tipo60 {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        .tipo60Contenido {
+            height: 20vh;
+            width: 20vh;
+            background: lime;
+            animation: tipo60Contenido 3s infinite;
+        }
+
+        @keyframes tipo60Contenido {
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+
+
+        .tipo61 {
+            animation: tipo61 3s infinite;
+        }
+
+        @keyframes tipo61 {
+            to {
+                transform: rotateX(45deg) skewY(30deg) rotateZ(45deg);
+            }
+        }
+
+        .tipo62 {
+            perspective: 1000px;
+        }
+
+        .tipo62 .contenedor {
+            transform-style: preserve-3d;
+        }
+
+        .tipo62 .objeto {
+            height: 20vh;
+            width: 20vh;
+            background: lime;
+            animation: tipo62 3s infinite;
+        }
+
+        @keyframes tipo62 {
+            0% {
+                transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+            }
+
+            50% {
+                transform: perspective(1000px) rotateY(45deg) rotateZ(45deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(90deg) rotateZ(90deg);
+            }
+        }
+
+
+        /* Distorsión 3D */
+        .tipo63 {
+            perspective: 1000px;
+            animation: tipo63 3s infinite;
+        }
+
+        @keyframes tipo63 {
+            to {
+                transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+            }
+        }
+
+
+
+        /* Distorsión de perspectiva con keyframes */
+
+        .tipo64 {
+            animation: tipo64 3s infinite;
+        }
+
+        @keyframes tipo64 {
+            0% {
+                transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+
+            50% {
+                transform: perspective(1000px) rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+            }
+        }
+
+
+        .tipo65 {
+            animation: tipo65 2s infinite alternate;
+        }
+
+        @keyframes tipo65 {
+            from {
+                transform: scale3d(1, 1, 1);
+            }
+
+            to {
+                transform: scale3d(1.5, 0.5, 2);
+            }
+        }
+
+        /* Desplazamiento 3D */
+
+
+        .tipo66 {
+            perspective: 1000px;
+        }
+
+        .tipo66 .contenedor1 {
+            transform-style: preserve-3d;
+        }
+
+        .objeto1 {
+            height: 20vh;
+            width: 20vh;
+            background: lime;
+        }
+
+        .tipo66 .objeto1 {
+            animation: tipo66 3s infinite;
+        }
+
+        @keyframes tipo66 {
+            to {
+                transform: perspective(1000px) translate3d(0, 0, 100px) rotateY(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagina">
+        <div class="container">
+            <div class="tipo1">1</div>
+        </div>
+        <div class="container">
+            <div class="tipo2">2</div>
+        </div>
+        <div class="container">
+            <div class="tipo3">3</div>
+        </div>
+        <div class="container">
+            <div class="tipo4">4</div>
+        </div>
+        <div class="container">
+            <div class="tipo5">5</div>
+        </div>
+        <div class="container">
+            <div class="tipo6">6</div>
+        </div>
+        <div class="container">
+            <div class="tipo7">7</div>
+        </div>
+        <div class="container">
+            <div class="tipo8">8</div>
+        </div>
+        <div class="container">
+            <div class="tipo9">9</div>
+        </div>
+        <div class="container">
+            <div class="tipo10">10</div>
+        </div>
+        <div class="container">
+            <div class="tipo11">11</div>
+        </div>
+        <div class="container">
+            <div class="tipo12">12</div>
+        </div>
+        <div class="container">
+            <div class="tipo13">13</div>
+        </div>
+        <div class="container">
+            <div class="tipo14">14</div>
+        </div>
+        <div class="container">
+            <div class="tipo15">15</div>
+        </div>
+        <div class="container">
+            <div class="tipo16">16</div>
+        </div>
+        <div class="container">
+            <div class="tipo17">17</div>
+        </div>
+        <div class="container">
+            <div class="tipo18">18</div>
+        </div>
+        <div class="container">
+            <div class="tipo19">19</div>
+        </div>
+        <div class="container">
+            <div class="tipo20">20</div>
+        </div>
+        <div class="container">
+            <div class="tipo21">21</div>
+        </div>
+        <div class="container">
+            <div class="tipo22">22</div>
+        </div>
+        <div class="container">
+            <div class="tipo23">23</div>
+        </div>
+        <div class="container">
+            <div class="tipo24">24</div>
+        </div>
+        <div class="container">
+            <div class="tipo25">25</div>
+        </div>
+        <div class="container">
+            <div class="tipo26">26</div>
+        </div>
+        <div class="container">
+            <div class="tipo27">27</div>
+        </div>
+        <div class="container">
+            <div class="tipo28">28</div>
+        </div>
+        <div class="container">
+            <div class="tipo29">29</div>
+        </div>
+        <div class="container">
+            <div class="tipo30">30</div>
+        </div>
+        <div class="container">
+            <div class="tipo31">31</div>
+        </div>
+        <div class="container">
+            <div class="tipo32">32</div>
+        </div>
+        <div class="container">
+            <div class="tipo33">33</div>
+        </div>
+        <div class="container">
+            <div class="tipo34">34</div>
+        </div>
+        <div class="container">
+            <div class="tipo35">35</div>
+        </div>
+        <div class="container">
+            <div class="tipo36">36</div>
+        </div>
+        <div class="container">
+            <div class="tipo37">37</div>
+        </div>
+        <div class="container">
+            <div class="tipo38">38</div>
+        </div>
+        <div class="container">
+            <div class="tipo39">39</div>
+        </div>
+        <div class="container">
+            <div class="tipo40">40</div>
+        </div>
+        <div class="container">
+            <div class="tipo41">41</div>
+        </div>
+        <div class="container">
+            <div class="tipo42">42</div>
+        </div>
+        <div class="container">
+            <div class="tipo43">43</div>
+        </div>
+        <div class="container">
+            <div class="tipo44">44</div>
+        </div>
+        <div class="container">
+            <div class="tipo45">45</div>
+        </div>
+        <div class="container">
+            <div class="tipo46">46</div>
+        </div>
+        <div class="container">
+            <div class="tipo47">47</div>
+        </div>
+        <div class="container">
+            <div class="tipo48">48</div>
+        </div>
+        <div class="container">
+            <div class="tipo49">49</div>
+        </div>
+        <div class="container">
+            <div class="tipo50">50</div>
+        </div>
+        <div class="container">
+            <div class="tipo51">51</div>
+        </div>
+        <div class="container">
+            <div class="tipo52">52</div>
+        </div>
+        <div class="container">
+            <div class="tipo53">53</div>
+        </div>
+        <div class="container">
+            <div class="tipo54">54</div>
+        </div>
+        <div class="container">
+            <div class="tipo55">55</div>
+        </div>
+        <div class="container">
+            <div class="tipo56">56</div>
+        </div>
+        <div class="container">
+            <div class="tipo57">57</div>
+        </div>
+        <div class="container">
+            <div class="tipo58">58</div>
+        </div>
+        <div class="container">
+            <div class="tipo59">59</div>
+        </div>
+        <div class="container">
+            <div class="tipo60">
+                <div class="tipo60Contenido">60</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tipo61">61</div>
+        </div>
+        <div class="container">
+            <div class="tipo62">
+                <div class="contenedor">
+                    <div class="objeto">62</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tipo63">63</div>
+        </div>
+        <div class="container">
+            <div class="tipo64">64</div>
+        </div>
+        <div class="container">
+            <div class="tipo65">65</div>
+        </div>
+        <div class="container">
+            <div class="tipo66">
+                <div class="contenedor1 "></div>
+                <div class="objeto1">66</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
